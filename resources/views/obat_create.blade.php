@@ -10,20 +10,25 @@
             <form action="{{ route('obat.store') }}" method="post">
                 {{ csrf_field() }}
                 <div class="form-group">
-                    <label for="nama">Nama Obat:</label>
-                    <input type="text" class="form-control" id="usr" name="nama">
+                    <label for="nama_obat">Nama Obat:</label>
+                    <input type="text" class="form-control" id="nama_obat" name="nama_obat">
                 </div>
 				<div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email">
+                    <label for="harga">Harga:</label>
+                    <input type="number" class="form-control" id="harga" name="harga">
                 </div>
 				<div class="form-group">
-                    <label for="nohp">No HP:</label>
-                    <input type="number" class="form-control" id="nohp" name="nohp">
+                    <label for="stok">Stok:</label>
+                    <input type="number" class="form-control" id="stok" name="stok">
                 </div>
 				<div class="form-group">
-                    <label for="alamat">Alamat:</label>
-                    <textarea class="form-control" id="alamat" name="alamat"></textarea>
+                    <label for="expired_date">Expired Date:</label>
+                    <input type="date" class="form-control" id="expired_date" name="expired_date">
+                </div>
+                <div class="form-group">
+				<div class="form-group">
+                    <label for="production_date">Production Date:</label>
+                    <input type="date" class="form-control" id="production_date" name="production_date">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-md btn-primary">Submit</button>
