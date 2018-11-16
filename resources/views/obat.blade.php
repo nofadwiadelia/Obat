@@ -35,10 +35,10 @@
                         <td>{{ $d->expired_date }}</td>
 						<td>{{ $d->production_date }}</td>
                         <td>
-                            <form action="{{ route('mahasiswa.destroy', $d->nim) }}" method="post">
+                            <form action="{{ route('obat.destroy', $d->nim) }}" method="post">
                                 {{ csrf_field() }}
                                 {{ method_field('DELETE') }}
-                                <a href="{{ route('mahasiswa.edit',$d->nim) }}" class=" btn btn-sm btn-primary">Edit</a>
+                                <a href="{{ route('obat.edit',$d->nim) }}" class=" btn btn-sm btn-primary">Edit</a>
                                 <button class="btn btn-sm btn-danger" type="submit" onclick="return confirm('Yakin ingin menghapus data?')">Delete</button>
                             </form>
                         </td>
